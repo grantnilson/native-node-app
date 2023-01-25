@@ -49,11 +49,11 @@ app.put("/details/:id", (req, res) => {
 app.delete("/details/:id", (req, res) => {
   const detail = details.find((a) => a.id === parseInt(req.params.id));
   if (!detail) return res.status(404).send("Detail not found");
-  const index = details.indexOf(article);
+  const index = details.indexOf(detail);
   details.splice(index, 1);
   res.json(detail);
 });
 
 app.listen(port, () =>
-  console.log(`Details API listening at http://localhost:${port}`)
+  console.log(`Details API listening at http://10.251.181.93:${port}`)
 );

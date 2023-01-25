@@ -1,0 +1,1 @@
+{"name":"frontend","version":"0.0.1","private":true,"scripts":{"start":"node node_modules/react-native/local-cli/cli.js start"},"dependencies":{"expo":"^47.0.13","react-native":"0.71.1","react-native-ssl-pinning":"^1.5.7"}}
